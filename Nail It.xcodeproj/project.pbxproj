@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F87DBF21E53704500CEE7D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F87DBF11E53704500CEE7D3 /* GoogleMobileAds.framework */; };
 		3F955E131DF85D2200EB46B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F955E121DF85D2200EB46B3 /* AppDelegate.swift */; };
 		3F955E151DF85D2200EB46B3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F955E141DF85D2200EB46B3 /* GameScene.sks */; };
 		3F955E171DF85D2200EB46B3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F955E161DF85D2200EB46B3 /* Actions.sks */; };
@@ -17,6 +18,7 @@
 		3F955E231DF85D2200EB46B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F955E211DF85D2200EB46B3 /* LaunchScreen.storyboard */; };
 		3F955E2E1DF85D2200EB46B3 /* Nail_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F955E2D1DF85D2200EB46B3 /* Nail_ItTests.swift */; };
 		3F955E391DF85D2200EB46B3 /* Nail_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F955E381DF85D2200EB46B3 /* Nail_ItUITests.swift */; };
+		3FB2E8E71E4CC751007DC85E /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2E8E61E4CC751007DC85E /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F87DBF11E53704500CEE7D3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../../Lasso/Lasso/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		3F955E0F1DF85D2200EB46B3 /* Nail It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nail It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F955E121DF85D2200EB46B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F955E141DF85D2200EB46B3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		3F955E341DF85D2200EB46B3 /* Nail ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nail ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F955E381DF85D2200EB46B3 /* Nail_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nail_ItUITests.swift; sourceTree = "<group>"; };
 		3F955E3A1DF85D2200EB46B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB2E8E61E4CC751007DC85E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB2E8E71E4CC751007DC85E /* GameKit.framework in Frameworks */,
+				3F87DBF21E53704500CEE7D3 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 				3F955E2C1DF85D2200EB46B3 /* Nail ItTests */,
 				3F955E371DF85D2200EB46B3 /* Nail ItUITests */,
 				3F955E101DF85D2200EB46B3 /* Products */,
+				3FB2E8E51E4CC751007DC85E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				3F955E121DF85D2200EB46B3 /* AppDelegate.swift */,
+				3F87DBF11E53704500CEE7D3 /* GoogleMobileAds.framework */,
 				3F955E141DF85D2200EB46B3 /* GameScene.sks */,
 				3F955E161DF85D2200EB46B3 /* Actions.sks */,
 				3F955E181DF85D2200EB46B3 /* GameScene.swift */,
@@ -132,6 +140,14 @@
 				3F955E3A1DF85D2200EB46B3 /* Info.plist */,
 			);
 			path = "Nail ItUITests";
+			sourceTree = "<group>";
+		};
+		3FB2E8E51E4CC751007DC85E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2E8E61E4CC751007DC85E /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +220,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 662W7T2LYN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					3F955E281DF85D2200EB46B3 = {
 						CreatedOnToolsVersion = 8.0;
@@ -431,11 +452,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 662W7T2LYN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Zachs\\ Apps/Lasso/Lasso",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Zachs\\ Apps/Lasso/Lasso",
+				);
 				INFOPLIST_FILE = "Nail It/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZSA.Nail-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -445,11 +473,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 662W7T2LYN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Zachs\\ Apps/Lasso/Lasso",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Zachs\\ Apps/Lasso/Lasso",
+				);
 				INFOPLIST_FILE = "Nail It/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZSA.Nail-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
